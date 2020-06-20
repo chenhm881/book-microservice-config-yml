@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: book-oauth-server
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.98.163.117:3306/security_authority
+    username: root
+    password: 123456
+  main:
+    allow-bean-definition-overriding: true
+mybatis:
+  type-aliases-package: com.heiio.bookoauthserver.domain
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+server:
+  port: 8129
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8119/eureka
+      register-with-eureka: true
+      prefer-ip-address: true
+
+
+
+

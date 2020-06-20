@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: book-microservice-eureka
+  profiles:
+    active: dev
+
+server:
+  port: 8119
+
+eureka:
+  instance:
+    hostname: book-microservice-eureka
+  client:
+    service-url:
+      defaultZone: http://localhost:8119/eureka
+      register-with-eureka: false
+      prefer-ip-address: false
+
+
+
