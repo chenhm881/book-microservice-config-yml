@@ -19,7 +19,10 @@ mybatis:
 server:
   port: 8129
 
+
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://localhost:8119/eureka
