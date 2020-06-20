@@ -25,5 +25,3 @@ zuul:
       service-id: book-oauth-server
       path: /oauth/**
 
-
-
