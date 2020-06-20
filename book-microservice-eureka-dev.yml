@@ -10,11 +10,12 @@ server:
 eureka:
   instance:
     hostname: book-microservice-eureka
+    prefer-ip-address: false
   client:
+    register-with-eureka: false
     service-url:
       defaultZone: http://localhost:8119/eureka
-      register-with-eureka: false
-      prefer-ip-address: false
+
 
 
 

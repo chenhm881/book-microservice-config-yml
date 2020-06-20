@@ -24,10 +24,11 @@ eureka:
   instance:
     prefer-ip-address: true
   client:
+    register-with-eureka: true
+    fetch-registery: true
     service-url:
       defaultZone: http://localhost:8119/eureka
-      register-with-eureka: true
-      prefer-ip-address: true
+
 
 
 
