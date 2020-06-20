@@ -17,11 +17,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:8119/eureka
 
-zuul:
-  prefix: /bk
-  ignored-services: *
-  routes:
-    myticket:
-      service-id: book-oauth-server
-      path: /oauth/**
 
