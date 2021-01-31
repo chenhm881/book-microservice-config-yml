@@ -3,12 +3,8 @@ spring:
     name: book-consumer
   profiles:
     active: dev
-  main:
-    allow-bean-definition-overriding: true
-
 server:
   port: 8139
-
 
 eureka:
   instance:
@@ -16,7 +12,7 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registery: true
-    service-url
+    service-url:
       defaultZone: http://localhost:8119/eureka
 
 
