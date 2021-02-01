@@ -23,5 +23,5 @@ zuul:
   routes:
     myticket:
       service-id: book-oauth-server
-      path: /oauth/**
+      path: /book-oauth-server/**
 
