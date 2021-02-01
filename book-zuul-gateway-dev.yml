@@ -24,3 +24,6 @@ zuul:
     myticket:
       service-id: book-oauth-server
       path: /book-oauth-server/**
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
